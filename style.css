@@ -1,0 +1,297 @@
+/*Sıfırlama İşlemleri*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --ana-renk: rgb(38,137,145);
+}
+
+/*Header Başlangıç*/
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+header .title{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header .title h1{
+    color: gray;
+}
+header .title h1 span{
+    color: var(--ana-renk);
+}
+header .title a{
+    font-size: 50px;
+    color: var(--ana-renk);
+}
+header nav ul{
+    display: flex;
+    gap: 20px;
+}
+header nav ul a{
+    text-decoration: none;
+    color: gray;
+
+}
+header nav ul a i{
+    color: var(--ana-renk);
+}
+header nav ul a:hover{
+    color: var(--ana-renk);
+}
+/*Header Bitiş*/
+
+
+/*Section Start*/
+section{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+}
+section .sec-left{
+    text-align: center;
+    flex: 1;
+
+}
+section .images{
+    flex: 1;
+    width: 300px;
+}
+section .sec-left h1{
+   font-size: 35px;
+   color: gray;
+   margin-bottom: 25px;
+}
+
+section .sec-left h1 span{
+   color: var(--ana-renk);
+}
+section .sec-left p{
+   font-size: 16px;
+}
+section .sec-left button{
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--ana-renk);
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 15px;
+}
+section button:hover{
+    scale: 1.2;/*büyütüyorr*/
+    cursor: pointer;
+    transition: all 1s ease;
+}
+/*Section End*/
+/* course info start */
+.course-info{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(48,137,145,0.55);
+    padding: 15px;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+.p-sec, .image-sec{
+    flex: 1;
+}
+.image-sec img{
+    width: 400px;
+}
+.course-info .p-sec h1{
+    background-color: var(--ana-renk);
+    padding: 20px;
+    width: 60%;
+    position: absolute;
+    top: -20px;
+    border-bottom-right-radius:60px;
+    color: wheat;
+}
+.course-info .p-sec p{
+    font-size: 18px;
+    color: white;
+}
+.course-info .p-sec button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--ana-renk);
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    
+}
+.course-info .p-sec button:hover{
+    scale: 1.2;
+    transition: all 1s ease;
+}
+/* course info end */
+/*aboute-sec-left start*/
+.aboute-section{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.aboute-section .aboute-sec-left{
+    flex: 1;
+}
+.aboute-section .aboute-sec-left h1{
+    color: gray;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.aboute-section .aboute-sec-left h1 span{
+    color: var(--ana-renk);
+}
+.aboute-section .aboute-sec-left p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.aboute-section .aboute-sec-left button{
+    padding: 5px 10px;
+    background-color: var(--ana-renk);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.aboute-section .images{
+    width: 400px;
+}
+
+.contact-info{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+.contact-info .c-sec h1{
+    background-color: var(--ana-renk);
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    color: white;
+    padding: 3px 6px;
+    font-weight: bold;
+}
+.contact-info .c-sec p{
+    font-size: 25px;
+    width: 50%;
+    margin-left: 25%;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-forms-button{
+    margin-top: 20px;
+}
+input[type=text],input[type=number], input[type=date] {
+    width: 20%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    outline: none;
+    border: solid 1px var(--ana-renk);
+    align-items: center;
+    font-weight: bold;
+  }
+.contact-info button{
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: var(--ana-renk);
+    color: white;
+    font-size: 13px;
+    
+}
+.contact-info button:hover{
+    scale: 1.2;
+    transition: all 1s ease;
+}
+/*aboute-sec-left end*/
+/*Courses grid start*/
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin-top: 40px;
+    column-gap: 40px;
+    gap: 50px;
+    text-align: center;
+}
+.container-grid .container-grid-groups{
+    height: 300px;
+    margin-left: 40px;
+    text-align: center;
+    
+}
+.container-grid .container-grid-groups img{
+    width: 140px;
+    margin-bottom: 10px;
+    
+}
+.container-grid .container-grid-groups h3{
+    background-color: var(--ana-renk);
+    color: white;
+    border-radius: 10px;
+    width: 260px;
+    margin-left: 90px;
+}
+.container-grid .container-grid-groups p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container-grid .container-grid-groups button{
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--ana-renk);
+}
+.container-grid .container-grid-groups button:hover{
+    scale: 1.2;
+    transition: all 1s ease;
+}
+
+/*Courses grid end*/
+/*Footer start*/
+footer{
+    padding: 20px;
+    margin-top: 100px;
+    border-top: solid 1px var(--ana-renk);
+}
+footer .footer-start{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+footer .footer-start .footer-area{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+footer .footer-start .footer-area a{
+    text-decoration: none;
+    color: gray;
+}
+footer .bottom{
+    text-align: center;
+    margin-top: 50px;
+    border-top: solid 1px var(--ana-renk);
+    padding: 20px;
+}
+/*Footer end*/
