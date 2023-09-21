@@ -31,4 +31,7 @@ Karşılama kısmıdır tüm detaylar için info vardır.
 
 <h1>Proje Görünümü</h1>
 
-<img src="" alt="">
+![4](https://github.com/ufukaks/Udemig-Courses/assets/34891595/39bcb64e-aab8-4c3a-898f-d3002f1b0936)
+![3](https://github.com/ufukaks/Udemig-Courses/assets/34891595/d353fd0a-9a4f-46eb-95b0-637f5a21fa40)
+![2](https://github.com/ufukaks/Udemig-Courses/assets/34891595/e4ce83dd-4c13-47fe-b731-2c8b81cf4dd0)
+![1](https://github.com/ufukaks/Udemig-Courses/assets/34891595/a3fd0011-9d85-4a54-a51c-4c2558059543)
